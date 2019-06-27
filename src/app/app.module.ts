@@ -12,6 +12,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClient } from 'selenium-webdriver/http';
+/* Plugings*/
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,7 +27,9 @@ import { HttpClient } from 'selenium-webdriver/http';
     ],
   providers: [
     StatusBar,
-    SplashScreen,
+    InAppBrowser,
+     SocialSharing,
+     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
