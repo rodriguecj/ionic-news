@@ -15,6 +15,7 @@ import { HttpClient } from 'selenium-webdriver/http';
 /* Plugings*/
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
+import { IonicStorageModule } from '@ionic/storage';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { SocialSharing } from '@ionic-native/social-sharing/ngx';
   imports: [BrowserModule,
      IonicModule.forRoot(),
      AppRoutingModule,
+     IonicStorageModule.forRoot(),
      HttpClientModule
     ],
   providers: [
